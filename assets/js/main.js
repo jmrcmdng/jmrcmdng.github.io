@@ -3,6 +3,10 @@ $('.p-wrap').on('click', function(){
     setTimeout(sliderInit, 500)
 });
 
+$('.p-detail .close').on('click', function(){
+    $('#project-detail').modal('hide');
+});
+
 $('.carousel-img').click(function(){
     var src = $(this).attr('src');
     $('<div class="full-image-panel">').css({

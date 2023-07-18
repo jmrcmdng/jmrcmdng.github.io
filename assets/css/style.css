@@ -5,7 +5,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   z-index: 1;
-} 
+}
 
 body::before {
   content: "";
@@ -48,6 +48,54 @@ p {
   text-align: justify;
 }
 
+input.form-control, textarea.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0;
+  transition: 0.3s;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+input.form-control::-moz-placeholder, textarea.form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+input.form-control::placeholder, textarea.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #00adb5;
+  font-family: "roboto", serif;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #00adb5;
+  transition: 0.3s;
+}
+
+button i {
+  margin-right: 3px;
+}
+
+button:hover {
+  background: #00adb5;
+  color: #fff;
+}
+
+i.bi-x-lg:hover{
+  color: #00adb5 !important;
+}
+
 /*scroll bar css*/
 
 ::-webkit-scrollbar {
@@ -55,15 +103,15 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: #a7a7a7; 
+  background: #a7a7a7;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-  background: #575757; 
+  background: #575757;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00adb5; 
+  background: #00adb5;
 }
 
 /*home tab css*/
@@ -183,22 +231,22 @@ p {
     line-height: 40px;
   }
 
-  
-.home h2 span.intro {
-  font-size: 30px;
-}
 
-.home h2 span.name {
-  font-size: 60px;
-}
+  .home h2 span.intro {
+    font-size: 30px;
+  }
 
-.home h2 span.title {
-  font-size: 30px;
-}
+  .home h2 span.name {
+    font-size: 60px;
+  }
 
-.home h2 span.profession {
-  font-size: 14px;
-}
+  .home h2 span.title {
+    font-size: 30px;
+  }
+
+  .home h2 span.profession {
+    font-size: 14px;
+  }
 
   .home .sns {
     margin-top: 25px;
@@ -407,14 +455,14 @@ section .panel h4 {
 }
 
 /*about css*/
-.about .bg{
+.about .bg {
   position: absolute;
   opacity: .3;
   right: 10%;
 }
 
 @media (max-width: 992px) {
-  .about .bg{
+  .about .bg {
     width: 350px;
   }
 }
@@ -504,7 +552,7 @@ section .panel h4 {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
-  display:block;
+  display: block;
 }
 
 .project .p-wrap::before {
@@ -597,10 +645,21 @@ section .panel h4 {
 }
 
 .p-content .p-detail {
-    padding: 10px 20px;
-    margin-top: -2px;
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
-    position: relative;
+  padding: 10px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.p-content .p-detail h4 button {
+  float: right;
+  border: 0;
+  background: transparent;
+}
+
+.p-content .p-detail h4 button i {
+  color: #fff;
+  font-size: 21px;
 }
 
 .p-content .p-detail::before {
@@ -613,11 +672,11 @@ section .panel h4 {
   background: #00adb5;
 }
 
-.carousel-wrap{
+.carousel-wrap {
   display: flex;
   max-width: 1200px;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .p-content .p-detail h4 {
@@ -625,7 +684,8 @@ section .panel h4 {
   font-size: 16px;
 }
 
-.p-content .p-description ul, .p-content .p-description p {
+.p-content .p-description ul,
+.p-content .p-description p {
   padding-left: 20px;
   color: #a9a9a9;
 }
@@ -640,13 +700,13 @@ section .panel h4 {
 }
 
 /*carousel css*/
-.carousel-wrap i{
+.carousel-wrap i {
   top: 50%;
   height: 44px;
   width: 44px;
   color: #343F4F;
   cursor: pointer;
-  font-size: 1.15rem;
+  font-size: 2rem;
   position: absolute;
   text-align: center;
   line-height: 44px;
@@ -658,24 +718,28 @@ section .panel h4 {
   color: #00adb5;
 }
 
-.carousel-wrap i:active{
+.carousel-wrap i::before {
+  vertical-align: -0.1em;
+}
+
+.carousel-wrap i:active {
   transform: translateY(-50%) scale(0.9);
 }
 
-.carousel-wrap i:hover{
+.carousel-wrap i:hover {
   background: #f2f2f2;
 }
 
-.carousel-wrap i:first-child{
+.carousel-wrap i:first-child {
   left: -22px;
   display: none;
 }
 
-.carousel-wrap i:last-child{
+.carousel-wrap i:last-child {
   right: -22px;
 }
 
-.carousel-wrap .carousel{
+.carousel-wrap .carousel {
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
@@ -683,16 +747,16 @@ section .panel h4 {
   scroll-behavior: smooth;
 }
 
-.carousel.dragging{
+.carousel.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
 
-.carousel.dragging img{
+.carousel.dragging img {
   pointer-events: none;
 }
 
-.carousel img{
+.carousel img {
   height: 340px;
   object-fit: cover;
   user-select: none;
@@ -700,32 +764,32 @@ section .panel h4 {
   width: calc(100% / 3);
 }
 
-.carousel img:first-child{
+.carousel img:first-child {
   margin-left: 0px;
 }
 
 @media screen and (max-width: 900px) {
-  .carousel img{
+  .carousel img {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 550px) {
-  .carousel img{
+  .carousel img {
     width: 100%;
   }
 }
 
-.full-image-panel{
+.full-image-panel {
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: 9999;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.full-image-panel i{
+.full-image-panel i {
   font-size: 40px;
   color: #fff;
   float: right;
@@ -773,55 +837,6 @@ section .panel h4 {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .message input,
-.contact .message textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  transition: 0.3s;
-  color: #fff;
-}
-
-.contact .message input:focus,
-.contact .message textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
-}
-
-.contact .message input::-moz-placeholder,
-.contact .message textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .message input::placeholder,
-.contact .message textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .message input,
-.contact .message textarea {
-  padding: 10px 15px;
-}
-
-.contact .message button {
-  background: transparent;
-  border: 1px solid #00adb5;
-  font-weight: 600;
-  font-family: "roboto-bold", serif;
-  padding: 10px 30px;
-  font-size: 14px;
-  color: #00adb5;
-  transition: 0.3s;
-}
-
-.contact .message button:hover {
-  background: #00adb5;
-  color: #fff;
-}
-
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -841,12 +856,37 @@ section .panel h4 {
   font-family: "roboto", serif;
   position: absolute;
   bottom: 0;
-} 
+}
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   .footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+
+/*under maintenance css*/
+
+.under-maintenance {
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgb(4 4 4 / 70%);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 50;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: 'roboto', sans-serif;
+  color: #a9a9a9;
+}
+
+.under-maintenance i{
+  margin-left: 5px;
+  font-size: 25px;
 }
