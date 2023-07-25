@@ -92,10 +92,6 @@ button:hover {
   color: #fff;
 }
 
-i.bi-x-lg:hover{
-  color: #00adb5 !important;
-}
-
 /*scroll bar css*/
 
 ::-webkit-scrollbar {
@@ -559,17 +555,17 @@ section .panel h4 {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
   z-index: 2;
-  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
 }
 
 .project .p-wrap .p-info {
-  opacity: 0;
+  opacity: 1;
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -577,62 +573,50 @@ section .panel h4 {
   bottom: 0;
   text-align: center;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.project .p-wrap .p-info::before {
+.project .p-wrap .p-info::before, .project .p-wrap .p-info::after {
   display: block;
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  border-top: 2px solid #00adb5;
-  border-left: 2px solid #00adb5;
-  transition: all 0.5s ease 0s;
   z-index: 9994;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.project .p-wrap .p-info::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-bottom: 2px solid #00adb5;
-  border-right: 2px solid #00adb5;
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
+.project .p-wrap:hover .p-info::before, .project .p-wrap:hover .p-info::after {
+  border: 1px solid #00adb5;
+  opacity: 1;
 }
 
 .project .p-wrap .p-info h4 {
-  font-size: 20px;
-  color: #fff;
+  background: rgba(75, 75, 75, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 20px rgba(75, 75, 75, 0.2);
+  font-size: 25px;
+  line-height: 1.3;
+  color: #cecece;
   font-weight: 600;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .project .p-wrap .p-info p {
-  color: #ffffff;
-  font-size: 14px;
+  color: #cecece;
+  font-size: 15px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  transition: all 0.3s ease-in-out 0s;
 }
 
-.project .p-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-}
-
-.project .p-wrap:hover .p-info {
-  opacity: 1;
-  cursor: pointer;
+.project .p-wrap:hover .p-info h4, .project .p-wrap:hover .p-info p {
+  color: #ffffff;
 }
 
 /*custom modal css*/
@@ -757,7 +741,6 @@ section .panel h4 {
 }
 
 .carousel img {
-  height: 340px;
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
@@ -791,7 +774,7 @@ section .panel h4 {
 
 .full-image-panel i {
   font-size: 40px;
-  color: #fff;
+  color: #d5d5d5;
   float: right;
   cursor: pointer;
   position: absolute;

@@ -1,4 +1,41 @@
-$('.p-wrap').on('click', function(){
+
+var proj_data = ``;
+$.each(projects, function (index, item) {
+    proj_data += `<div class="col-lg-6 col-md-6 p-item">
+                    <a href="javascript:void(0)" class="p-wrap" proj_id="${item.id}">
+                    <img src="${item.image}" class="img-fluid" alt="">
+                    <div class="p-info">
+                        <h4>${item.title}</h4>
+                        <p>${item.year}</p>
+                    </div>
+                    </a>
+                </div>`;
+});
+$('.project-box').html(proj_data);
+
+$('.project-box').on('click', '.p-wrap', function(){
+    var proj_id = $(this).attr('proj_id');
+    var proj = projects.filter(x => x.id == proj_id)[0];
+
+    $('.project-name').html(proj.title + ` - <i>${proj.year}</i>`);
+    $('.project-summary').html(proj.description);
+
+    $('.project-url').hide();
+    if(proj.url != ''){
+        $('.project-url').show().find('p').html(`<a href="${proj.url}" target="_blank"><b>${proj.url}</b></a>`);
+    }
+    var proj_images = ``;
+    $.each(proj.images, function (index, image) {
+        proj_images += `<img class="carousel-img" src="${image}" alt="img" draggable="false">`;
+    });
+    $('.project-carousel').html(proj_images);
+
+    var proj_features = ``;
+    $.each(proj.features, function (index, feature) {
+        proj_features += `<li><b>${feature.title}:</b> ${feature.content}</li>`;
+    });
+    $('.project-features').html(proj_features);
+
     $('#project-detail').modal('show');
     setTimeout(sliderInit, 500)
 });
@@ -7,82 +44,12 @@ $('.p-detail .close').on('click', function(){
     $('#project-detail').modal('hide');
 });
 
-$('.carousel-img').click(function(){
+$('.project-carousel').on('click', '.carousel-img', function(){
     var src = $(this).attr('src');
     $('<div class="full-image-panel">').css({
-        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        background: 'rgba(0,0,0,.5) url('+src+') no-repeat center',
         backgroundSize: 'contain',
     }).click(function(){
         $(this).remove();
     }).append('<i class="bi bi-x-lg">').appendTo('body');
 });
-
-function sliderInit() {
-    const carousel = document.querySelector(".carousel"),
-    arrowIcons = document.querySelectorAll(".carousel-wrap i");
-
-    const firstImg = document.querySelectorAll(".carousel img")[0]; 
-
-    let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
-
-    const showHideIcons = () => {
-        let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
-        arrowIcons[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
-        arrowIcons[1].style.display = carousel.scrollLeft - scrollWidth > -1 ? "none" : "block";
-    }
-
-    arrowIcons.forEach(icon => {
-        let firstImgWidth = firstImg.clientWidth + 14;
-        icon.addEventListener("click", () => {
-            carousel.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth;
-            setTimeout(() => showHideIcons(), 60);
-        });
-    });
-
-    const autoSlide = () => {
-        if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-        
-        positionDiff = Math.abs(positionDiff);
-        let firstImgWidth = firstImg.clientWidth + 14;
-        let valDifference = firstImgWidth - positionDiff;
-
-        if(carousel.scrollLeft > prevScrollLeft) {
-            return carousel.scrollLeft += positionDiff > firstImgWidth / 4 ? valDifference : -positionDiff;
-        }
-        carousel.scrollLeft -= positionDiff > firstImgWidth / 4 ? valDifference : -positionDiff;
-    }
-
-    const dragStart = (e) => {
-        isDragStart = true;
-        prevPageX = e.pageX || e.touches[0].pageX;
-        prevScrollLeft = carousel.scrollLeft;
-    }
-
-    const dragging = (e) => {
-        if(!isDragStart) return;
-        isDragging = true;
-        carousel.classList.add("dragging");
-        positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-        carousel.scrollLeft = prevScrollLeft - positionDiff;
-        showHideIcons();
-    }
-
-    const dragStop = () => {
-        isDragStart = false;
-        carousel.classList.remove("dragging");
-
-        if(!isDragging) return;
-        isDragging = false;
-        autoSlide();
-    }
-
-    carousel.addEventListener("mousedown", dragStart);
-    carousel.addEventListener("touchstart", dragStart);
-
-    document.addEventListener("mousemove", dragging);
-    carousel.addEventListener("touchmove", dragging);
-
-    document.addEventListener("mouseup", dragStop);
-    document.addEventListener("mouseleave", dragStop);
-    carousel.addEventListener("touchend", dragStop);
-}
