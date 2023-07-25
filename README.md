@@ -1,2 +1,1 @@
-# jmrcmdng.github.io
-My Public Portfolio
+# MY PORTFOLIO
