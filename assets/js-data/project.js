@@ -338,7 +338,7 @@ const projects = [
         "type" : "web-system",
         "title": "ERP WEB SYSTEM",
         "url": "",
-        "year": "ENTERPRISE RESOURCE PLANNING (2022)",
+        "year": "ENTERPRISE RESOURCE PLANNING (2021)",
         "image": "assets/img/project/erp-01.jpg",
         "description": "Welcome to our cutting-edge Enterprise Resource Planning (ERP) Web System, an all-in-one solution designed to revolutionize the way businesses manage their operations. This comprehensive web application caters to the diverse needs of modern enterprises, streamlining processes, enhancing collaboration, and maximizing productivity across all departments. With an intuitive interface and powerful features, our ERP Web System is the ultimate tool to propel businesses towards unmatched efficiency and success.",
         "features": [
