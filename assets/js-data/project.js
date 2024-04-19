@@ -438,7 +438,7 @@ const projects = [
             "assets/img/project/erp-01.jpg",
             "assets/img/project/erp-02.jpg"
         ]
-    }
+    },
     {
         "id": 7,
         "type" : "web-system",
