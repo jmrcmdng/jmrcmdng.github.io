@@ -6,7 +6,7 @@ const projects = [
         "url": "https://raksotravel.com/",
         "year": "(2020)",
         "image": "assets/img/project/web1-01.jpg",
-        "description": "Welcome to Rakso Travel, your gateway to unforgettable travel adventures! As a skilled software engineer, I take immense pride in introducing this cutting-edge web application, designed to redefine the way tourists explore both local and international destinations. Rakso Travel is more than just a booking and reservation platform; it's a comprehensive travel solution complete with a powerful Content Management System (CMS) admin portal. With Rakso Travel, we aim to provide an immersive and seamless travel experience, offering detailed itineraries, efficient schedule tracking, and a range of user-friendly features.",
+        "description": "Welcome to Rakso Travel, your gateway to unforgettable travel adventures! As a skilled web developer, I take immense pride in introducing this cutting-edge web application, designed to redefine the way tourists explore both local and international destinations. Rakso Travel is more than just a booking and reservation platform; it's a comprehensive travel solution complete with a powerful Content Management System (CMS) admin portal. With Rakso Travel, we aim to provide an immersive and seamless travel experience, offering detailed itineraries, efficient schedule tracking, and a range of user-friendly features.",
         "features": [
             {
                 "title": "Detailed Homepage",
@@ -84,7 +84,7 @@ const projects = [
         "url": "https://onfill.com/",
         "year": "(2018)",
         "image": "assets/img/project/web2-01.jpg",
-        "description": "Introducing ONFILL, your gateway to extraordinary adventures from Korea to the enchanting landscapes of the Philippines! As a skilled software engineer, I am thrilled to unveil this cutting-edge web application, meticulously designed to elevate the travel experiences of Korean tourists exploring the captivating beauty of the Philippines. ONFILL is more than just a booking and reservation platform; it is a powerful travel companion complete with a robust Content Management System (CMS) admin portal. With ONFILL, tourists can craft their dream itineraries, uncovering the hidden gems of the Philippines, and immersing themselves in a seamless, detailed, and unforgettable journey.",
+        "description": "Introducing ONFILL, your gateway to extraordinary adventures from Korea to the enchanting landscapes of the Philippines! As a skilled web developer, I am thrilled to unveil this cutting-edge web application, meticulously designed to elevate the travel experiences of Korean tourists exploring the captivating beauty of the Philippines. ONFILL is more than just a booking and reservation platform; it is a powerful travel companion complete with a robust Content Management System (CMS) admin portal. With ONFILL, tourists can craft their dream itineraries, uncovering the hidden gems of the Philippines, and immersing themselves in a seamless, detailed, and unforgettable journey.",
         "features": [
             {
                 "title": "Immersive Homepage",
@@ -155,7 +155,7 @@ const projects = [
         "url": "http://islastory.com/",
         "year": "(2018)",
         "image": "assets/img/project/web3-01.jpg",
-        "description": "Welcome to Isla Story, your passport to unforgettable adventures in the enchanting Philippines! As an accomplished software engineer, I am thrilled to present this exceptional web application, tailored to cater to English-speaking tourists seeking to explore the beauty of the Philippines. Isla Story is the English version of the acclaimed Onfill platform, offering a seamless booking and reservation experience, complete with a robust Content Management System (CMS) admin portal. With Isla Story, travelers can embark on a journey of discovery, immersing themselves in the rich culture and breathtaking landscapes of the Philippines, all while designing their dream trip with utmost ease.",
+        "description": "Welcome to Isla Story, your passport to unforgettable adventures in the enchanting Philippines! As an accomplished web developer, I am thrilled to present this exceptional web application, tailored to cater to English-speaking tourists seeking to explore the beauty of the Philippines. Isla Story is the English version of the acclaimed Onfill platform, offering a seamless booking and reservation experience, complete with a robust Content Management System (CMS) admin portal. With Isla Story, travelers can embark on a journey of discovery, immersing themselves in the rich culture and breathtaking landscapes of the Philippines, all while designing their dream trip with utmost ease.",
         "features": [
             {
                 "title": "Immersive Homepage",
@@ -208,7 +208,7 @@ const projects = [
         "url": "https://www.12trip.ph/",
         "year": "(2019)",
         "image": "assets/img/project/web4-01.jpg",
-        "description": "Welcome to 12trip, your premier business-to-business booking and reservation platform designed exclusively for partners and small travel agencies. As a dedicated software engineer, I am excited to present this innovative web application, tailored to empower travel professionals with efficient tools to curate unforgettable local and international journeys, all while boosting the allure of the Philippines' tourist spots and destinations. With 12trip, travel agencies can create personalized and seamless trips, providing their clients with a seamless user experience and unparalleled service.",
+        "description": "Welcome to 12trip, your premier business-to-business booking and reservation platform designed exclusively for partners and small travel agencies. As a dedicated web developer, I am excited to present this innovative web application, tailored to empower travel professionals with efficient tools to curate unforgettable local and international journeys, all while boosting the allure of the Philippines' tourist spots and destinations. With 12trip, travel agencies can create personalized and seamless trips, providing their clients with a seamless user experience and unparalleled service.",
         "features": [
             {
                 "title": "Comprehensive Homepage",
@@ -271,7 +271,7 @@ const projects = [
         "url": "",
         "year": "HUMAN RESOURSE (2017)",
         "image": "assets/img/project/hr-01.jpg",
-        "description": "Introducing our state-of-the-art Human Resource Management System (HRMS) - the ultimate in-house solution to streamline your organization's workforce management and administrative tasks. As a software engineer, I am proud to present this comprehensive web-based system, designed to revolutionize how businesses manage their human resources efficiently and effortlessly. Our HRMS offers a calendar dashboard that empowers managers to oversee all leave requests within their teams and departments. It encompasses essential features such as employee information management, biometric check-in and check-out, payroll processing, overtime/undertime filing, leave management, and auto-generated documents. Additionally, our HRMS provides detailed reports for comprehensive insights into your organization's human resource activities.",
+        "description": "Introducing our state-of-the-art Human Resource Management System (HRMS) - the ultimate in-house solution to streamline your organization's workforce management and administrative tasks. As a web developer, I am proud to present this comprehensive web-based system, designed to revolutionize how businesses manage their human resources efficiently and effortlessly. Our HRMS offers a calendar dashboard that empowers managers to oversee all leave requests within their teams and departments. It encompasses essential features such as employee information management, biometric check-in and check-out, payroll processing, overtime/undertime filing, leave management, and auto-generated documents. Additionally, our HRMS provides detailed reports for comprehensive insights into your organization's human resource activities.",
         "features": [
             {
                 "title": "Calendar Dashboard",
@@ -439,5 +439,60 @@ const projects = [
             "assets/img/project/erp-02.jpg"
         ]
     }
-
+    {
+        "id": 7,
+        "type" : "web-system",
+        "title": "HRIS WEB SYSTEM",
+        "url": "",
+        "year": "HUMAN RESOURCE INFORMATION SYSTEM (2023)",
+        "image": "assets/img/project/hr2-01.jpg",
+        "description": "Introducing our cutting-edge Human Resource Information System (HRIS), a comprehensive in-house solution designed to streamline your organization's workforce management and administrative tasks. As a web developer, I am excited to present this revolutionary web-based system, aimed at transforming how businesses efficiently manage their human resources. Our HRIS offers key features including employee information management, photo-based check-in/out, payroll processing, overtime/undertime filing, leave management, and automated document generation. Additionally, our HRIS provides detailed reports for comprehensive insights into your organization's human resource activities.",
+        "features": [
+            {
+                "title": "Dashboards",
+                "content": "Optimize workforce management with efficient approval processes for managers."
+            },
+            {
+                "title": "Employee Information Management",
+                "content": "Centralize employee data for easy access and updates of vital details such as personal information, contact details, work history, and job assignments."
+            },
+            {
+                "title": "Photo Check-in and Check-out",
+                "content": "Ensure accuracy and security with photo-based attendance tracking, enabling reliable real-time monitoring of working hours."
+            },
+            {
+                "title": "Payroll Processing",
+                "content": "Automate payroll calculations for accurate and timely disbursements of salaries, deductions, and bonuses."
+            },
+            {
+                "title": "Email Notices",
+                "content": "Send notifications to employees for payroll and other company events."
+            },
+            {
+                "title": "Customization Options",
+                "content": "Streamline overtime and undertime requests, ensuring accurate compensation for additional hours worked."
+            },
+            {
+                "title": "Leave Management and Filing",
+                "content": "Simplify leave requests and approvals while maintaining organized records of leave balances and history."
+            },
+            {
+                "title": "Auto-generated Documents",
+                "content": "Save time and effort with automatic generation of essential documents such as Certificates of Employment (COE) and Certificates of Contributions (COC) for employees."
+            },
+            {
+                "title": "Detailed Reports",
+                "content": "Make informed decisions with comprehensive reports on attendance, leave, payroll, and other HR-related activities, facilitating data-driven insights."
+            },
+        ],
+        "benefits": [],
+        "images": [
+            "assets/img/project/hr2-01.jpg",
+            "assets/img/project/hr2-02.jpg",
+            "assets/img/project/hr2-03.jpg",
+            "assets/img/project/hr2-04.jpg",
+            "assets/img/project/hr2-05.jpg",
+            "assets/img/project/hr2-06.jpg"
+        ]
+    }
 ]
