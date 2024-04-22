@@ -152,7 +152,7 @@ const projects = [
         "id": 3,
         "type" : "web",
         "title": "ISLA STORY",
-        "url": "http://islastory.com/",
+        "url": "https://islastory.com/",
         "year": "(2018)",
         "image": "assets/img/project/web3-01.jpg",
         "description": "Welcome to Isla Story, your passport to unforgettable adventures in the enchanting Philippines! As an accomplished web developer, I am thrilled to present this exceptional web application, tailored to cater to English-speaking tourists seeking to explore the beauty of the Philippines. Isla Story is the English version of the acclaimed Onfill platform, offering a seamless booking and reservation experience, complete with a robust Content Management System (CMS) admin portal. With Isla Story, travelers can embark on a journey of discovery, immersing themselves in the rich culture and breathtaking landscapes of the Philippines, all while designing their dream trip with utmost ease.",
