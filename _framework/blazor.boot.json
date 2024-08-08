@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "JMRCMDNG.APP",
   "resources": {
-    "hash": "sha256-IP9HekdqtVsyVkzn6TfLhMR92Eef2FQd4xapWbtM1do=",
+    "hash": "sha256-yStqotmwQm4W+3LTwuRTI4Rm9+/S0HXnVQp5xGsdxo0=",
     "jsModuleNative": {
       "dotnet.native.8.0.5.se16c74rf9.js": "sha256-Gq/YqqvNIKGS+Awu1ozolYJd8VGcjbgMH4sU5hvZvTs="
     },
@@ -19,7 +19,7 @@
     "assembly": {
       "JMRCMDNG.APP.wasm": "sha256-rKM6s6Y1fDvXqTsG1u0g+nHwY99MtnsSKzNzxH5kQdY=",
       "JMRCMDNG.CORE.wasm": "sha256-Ac3RBokw00mNWM9qDXjTVGCMwgP0BFI9nPzBtShf8bM=",
-      "JMRCMDNG.DATA.wasm": "sha256-PhnCXrJEagyIVMZIGZbi4aq3ZI60uVzbphcVbfVhed4=",
+      "JMRCMDNG.DATA.wasm": "sha256-1KqYE7uCJ7GrAnsn6H7YSmTXmer5ke80sZ7pFftGd68=",
       "JMRCMDNG.SERVICES.wasm": "sha256-u3hc7eQJjQarEvGeJZ1BeXA0sn7WHwhULZZlC+OkWVA=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-IQMRRr8RLceQKPkjt2yZanGwPumo5Nj+YGJZ11Hm3lM=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-gAO2VmOZdzMjZ5E1VenLbz+mO31o3518wMFSOxr4Drg=",
