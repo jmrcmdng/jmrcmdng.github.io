@@ -715,11 +715,11 @@ section {
         opacity: .7;
     }
 
-    .summary .summary-item {
+    .about .summary .summary-item {
         width: calc(100% - 25px);
     }
 
-        .summary .summary-item a, .summary .summary-title {
+        .about .summary .summary-item a, .summary .summary-title {
             display: none;
         }
 }
