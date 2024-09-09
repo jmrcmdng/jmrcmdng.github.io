@@ -575,7 +575,7 @@ section {
     /*border-left: 2px solid var(--border-color);*/
     position: relative;
     display: inline-block;
-    width: calc(100% - 65px);
+    width: calc(100% - 20px);
 }
 
 .summary .summary-title {
