@@ -1,0 +1,124 @@
+﻿@font-face {
+    font-family: 'ubuntu';
+    src: url('font/Ubuntu-Regular.ttf');
+}
+
+* {
+    font-family: 'ubuntu', sans-serif !important;
+}
+
+body {
+    background-color: var(--mud-palette-surface);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.min-vh-100 {
+    min-height: calc(100vh - 64px);
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.mud-appbar {
+    background-color: var(--mud-palette-background);
+    border-bottom: 1px solid var(--mud-palette-lines-default);
+}
+
+.mud-appbar-transparent {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.mud-drawer {
+    background-color: var(--mud-palette-background);
+    border-right: 1px solid var(--mud-palette-lines-default);
+}
+
+.mud-navmenu-avatar .mud-avatar {
+    display: block;
+}
+
+.mud-navmenu-avatar .mud-list-item-avatar {
+    min-width: 52px;
+}
+
+.mud-navmenu-avatar .mud-list-item {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mud-navmenu-avatar .mud-list-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.mud-avatar.mud-avatar-account {
+    width: 280px !important;
+    height: 280px !important;
+    margin-bottom: 0 !important;
+}
+
+.mud-tabs-tabbar {
+    border-bottom: 1px solid var(--mud-palette-lines-default);
+}
+
+.mud-tab {
+    min-width: unset;
+    text-transform: unset;
+    font-weight: unset;
+    padding: 0 25px;
+}
+
+
+.mud-tab-w-badge {
+    padding: 0 50px 0 25px;
+}
+
+.mud-input-control.mud-input-control-margin-dense {
+    margin: 0;
+}
+
+.mud-tooltip-root, .mud-icon-root {
+    vertical-align: middle;
+}
+
+.mud-typography[tabindex="-1"] {
+    tabindex: 0;
+}
+
+.mud-typography[tabindex="-1"] {
+    outline: none;
+}
+
+.mud-table-toolbar {
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--mud-palette-table-lines);
+}
+
+.mud-picker .mud-input-control.mud-input-control-margin-dense.mud-input-outlined-with-label {
+    margin: 0;
+}
+
+.mud-table-dense * .mud-table-row .mud-table-cell:last-child {
+    width: 20%;
+}
+
+@media (max-width: 960px) {
+    .mud-table-dense * .mud-table-row .mud-table-cell:last-child {
+        width: inherit;
+    }
+}
+
+.mud-skeleton-text {
+    transform-origin: unset;
+    transform: scale(1, 1);
+}
