@@ -13,3 +13,12 @@ window.getPreferredColorScheme = () => {
 window.openInNewTab = (url) => {
     window.open(url, '_blank');
 }
+
+window.downloadFromUrl = (url) => {
+    const anchorElement = document.createElement('a');
+    anchorElement.href = url;
+    anchorElement.target = '_blank';
+    document.body.appendChild(anchorElement);
+    anchorElement.click();
+    document.body.removeChild(anchorElement);
+}

@@ -41,6 +41,8 @@ html, body {
 
 .mud-navmenu-avatar .mud-avatar {
     display: block;
+    width: 36px;
+    height: 36px;
 }
 
 .mud-navmenu-avatar .mud-list-item-avatar {
@@ -122,3 +124,37 @@ html, body {
     transform-origin: unset;
     transform: scale(1, 1);
 }
+
+.mud-link-icon {
+    transition: opacity 0.2s;
+    display: inline-flex;
+}
+
+.mud-bullet svg {
+    font-size: .825rem;
+    margin-top: 3px;
+}
+
+.mud-bullet span {
+    font-style: italic;
+    font-size: .725rem;
+}
+
+.mud-bullet:hover span {
+    transition: font-size 0.2s, color 0.2s;
+    font-size: .825rem;
+    color: var(--mud-palette-text-primary) !important;
+}
+
+.mud-bullet:hover svg {
+    font-size: 0.925rem;
+}
+
+.carousel-container {
+    position: relative;
+    outline: none;
+}
+
+    .carousel-container:focus {
+        outline: none;
+    }
