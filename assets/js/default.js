@@ -14,11 +14,18 @@ window.openInNewTab = (url) => {
     window.open(url, '_blank');
 }
 
-window.downloadFromUrl = (url) => {
-    const anchorElement = document.createElement('a');
-    anchorElement.href = url;
-    anchorElement.target = '_blank';
-    document.body.appendChild(anchorElement);
-    anchorElement.click();
-    document.body.removeChild(anchorElement);
-}
+window.downloadFromUrl = (fileName, url) => {
+    fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+            const blobUrl = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = blobUrl;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(blobUrl);
+        })
+        .catch(error => console.error('Download failed:', error));
+};
