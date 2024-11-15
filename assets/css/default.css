@@ -150,6 +150,10 @@ html, body {
     font-size: 0.925rem;
 }
 
+.mud-table-cell {
+    white-space: nowrap;
+}
+
 .carousel-container {
     position: relative;
     outline: none;
